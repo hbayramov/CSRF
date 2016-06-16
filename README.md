@@ -6,8 +6,7 @@ The main factor utilized is validity of the user’s authentication session. Tru
 
 ### Setup
 
-We are going to work on a publicly available open-source vulnerable web applica-
-tion: OWASP Mutillidae 2. This application contains various web vulnerabilities
+We are going to work on a publicly available open-source vulnerable web application: OWASP Mutillidae 2. This application contains various web vulnerabilities
 including XSS attack.  It is based on PHP and MySQL and part of the OWASP
 (Open Web Application Security Project). You need to download OWASP Virtual
 Machine to obtain OWASP Mutillidae 2. The virtual machine can be downloaded
